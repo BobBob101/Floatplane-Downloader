@@ -63,6 +63,7 @@ export type FilePathFormattingOptions = {
 	'%minute%': string;
 	'%second%': string;
 	'%videoTitle%': string;
+	'%videoFolder%': string;
 };
 
 export type Resolution = ValueOf<Resolutions>;
