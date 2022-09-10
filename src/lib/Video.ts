@@ -51,7 +51,7 @@ export default class Video {
 			'%minute%': nPad(this.releaseDate.getMinutes()),
 			'%second%': nPad(this.releaseDate.getSeconds()),
 			'%videoTitle%': this.title.replace(/ - /g, ' ').replace(/\//g, ' ').replace(/\\/g, ' '),
-			'%videoFolder%': this.title.replace(/ - /g, ' ').replace(/\//g, ' ').replace(/\\/g, ' ').replace(:/\\/g,' '),
+			'%videoFolder%': this.title.replace(/ - /g, ' ').replace(/\//g, ' ').replace(/\\/g, ' ').replace(/:/g,' '),
 		};
 
 		for (const [match, value] of Object.entries(formatLookup)) {
